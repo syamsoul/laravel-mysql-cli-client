@@ -15,7 +15,6 @@ This package allows you to access MySQL CLI Client via Laravel Artisan Command.
 * [Requirement](#requirement)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Example](#example)
 
 
 &nbsp;
