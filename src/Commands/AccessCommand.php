@@ -37,15 +37,18 @@ class AccessCommand extends Command
         $password = config("database.connections.$connection.password");
         $database = config("database.connections.$connection.database");
 
-        $process = new Process([
+        $command = [
             'mysql',
             "--host=$host",
             "--port=$port",
             "--user=$username",
             "--password=\"$password\"",
             $database,
-        ]);
+        ];
 
+        echo join(" ", $command) . "\n";
+
+        $process = new Process($command);
         $process->run();
     }
 }
