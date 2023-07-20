@@ -44,7 +44,7 @@ composer require syamsoul/laravel-mysql-cli-client
 
 Just call this Artisan Command:
 ```bash
-php artisan db:access;
+php artisan db:access
 ```
 
 &nbsp;
