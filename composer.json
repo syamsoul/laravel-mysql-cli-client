@@ -1,0 +1,29 @@
+{
+    "name": "syamsoul/laravel-mysql-cli-client",
+    "description": "Easily access MySQL CLI Client via Artisan Command",
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SoulDoit\\MysqlCliClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Syamsoul Azrien",
+            "email": "syamsoulazrien.miat@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.4",
+        "illuminate/console": "^10.4",
+        "symfony/process": "^6.3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SoulDoit\\MysqlCliClient\\Providers\\MysqlCliClientServiceProvider"
+            ]
+        }
+    }
+}
